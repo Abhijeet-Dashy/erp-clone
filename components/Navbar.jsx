@@ -59,6 +59,7 @@ const Navbar = ({ onToggleSidebar }) => {
               className="profile-img"
             />
             <h3 className="profile-name">ANIMESH KINDO</h3>
+            <p className="profile-role">ANIMESH KINDO</p>
             <p className="profile-role">Student</p>
           </div>
 
