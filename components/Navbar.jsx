@@ -45,7 +45,7 @@ const Navbar = ({ onToggleSidebar }) => {
         </div>
         <div className="profile-container" ref={profileRef}>
           <div className="profile" onClick={toggleProfileDropdown}>
-            <img src={profile} alt="User" className="profile-pic" />
+            <img src={animesh} alt="User" className="profile-pic" />
             <span className="profile-name">ANIMESH KINDO (Student)</span>
             <FaChevronDown className={`dropdown-arrow ${profileDropdownOpen ? 'rotated' : ''}`} />
           </div>
