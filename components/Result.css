@@ -1,0 +1,57 @@
+/* PAGE BACKGROUND */
+.result-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* GREEN HEADER BAR */
+.result-header-bar {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* DOWNLOAD BUTTON (similar to screenshot) */
+.download-button {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* MAIN CARD WITH BORDER + SHADOW */
+.semester-card {
+  background: white;
+  border: 3px solid #000;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ORANGE BAR AT THE TOP (Screenshot accurate) */
+.semester-title {
+  background-color: #f0ad4e;
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 2px solid #000;
+}
+
+/* THE EMPTY WHITE SPACE UNDER THE TITLE */
+.empty-white-box {
+  height: 500px;          /* adjust if needed */
+  background: white;
+}

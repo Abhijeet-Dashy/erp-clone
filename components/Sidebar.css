@@ -1,23 +1,20 @@
+/* SIDEBAR SHELL */
 .sidebar {
-  width: 198px;
+  width: 210px;
   height: 100vh;
-  background: #f5f5f5;
-  color: #545454;
-  padding: 10px 0;
-  font-family: Arial, sans-serif;
-  margin-top: 45px; 
+  background: #f7f7f7;
+  color: #4a4a4a;
+  margin-top: 60px; 
   position: fixed;
   left: 0;
   top: 0;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
   transition: transform 0.3s ease;
   z-index: 1000;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
-  will-change: transform;
-  contain: paint;
-  backface-visibility: hidden;
-  transform: translateZ(0);
 }
 
+/* OPEN / CLOSE */
 .sidebar.sidebar-open {
   transform: translateX(0);
 }
@@ -26,52 +23,72 @@
   transform: translateX(-100%);
 }
 
+/* TOP LOGO BAR (like screenshot) */
+.sidebar-logo-bar {
+  background: black;
+  padding: 14px 0;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.sidebar-logo-bar img {
+  width: 140px;
+  object-fit: contain;
+}
+
+/* MAIN MENU ITEM */
 .sidebar-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 16px;
   cursor: pointer;
-  transition: background 0.2s;
+  background: white;
+  border-bottom: 1px solid #e1e1e1;
+  transition: background 0.2s ease;
 }
 
 .sidebar-item:hover {
-  background: white;
-  color: black;
+  background: #fafafa;
 }
 
 .sidebar-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .sidebar-icon {
-  font-size: 18px;
+  font-size: 17px;
+  color: #444;
 }
 
 .sidebar-text {
   font-size: 15px;
+  color: #444;
 }
 
 .sidebar-arrow {
-  font-size: 14px;
+  font-size: 12px;
+  color: #666;
 }
 
-/* Submenus */
+/* SUBMENU */
 .submenu {
-  background: #f5f5f5;
-  padding-left: 20px; 
+  background: #ffffff;
+  border-bottom: 1px solid #e1e1e1;
+  padding-left: 40px;
 }
 
 .submenu-item {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 8px 16px;
+  padding: 9px 0;
   font-size: 14px;
   cursor: pointer;
-  transition: color 0.2s;
+  color: #666;
+  transition: color 0.2s ease;
 }
 
 .submenu-item:hover {
@@ -79,15 +96,14 @@
 }
 
 .submenu-icon {
-  font-size: 14px;
+  font-size: 13px;
 }
 
-/* Sidebar Responsive Styles */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .sidebar {
     transform: translateX(-100%);
   }
-  
   .sidebar.sidebar-open {
     transform: translateX(0);
   }

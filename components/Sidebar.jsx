@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   FaBed,
   FaCubes,
   FaBook,
   FaHdd,
   FaShieldAlt,
-  FaChevronRight,
-  FaChevronDown,
   FaFileAlt,
   FaClipboardList,
   FaMoneyBill,
@@ -24,15 +22,8 @@ import { PiForkKnifeFill } from "react-icons/pi";
 import "./Sidebar.css";
 
 const Sidebar = ({ isOpen }) => {
-  const [openMenu, setOpenMenu] = useState(null);
-
-  const toggleMenu = (menu) => {
-    setOpenMenu(openMenu === menu ? null : menu);
-  };
-
   const menuItems = [
     {
-      id: "hostel",
       icon: <FaBed />,
       label: "Hostel",
       submenus: [
@@ -42,7 +33,6 @@ const Sidebar = ({ isOpen }) => {
       ],
     },
     {
-      id: "academics",
       icon: <FaCubes />,
       label: "Academics",
       submenus: [
@@ -52,7 +42,6 @@ const Sidebar = ({ isOpen }) => {
       ],
     },
     {
-      id: "dms",
       icon: <FaBook />,
       label: "DMS",
       submenus: [
@@ -61,7 +50,6 @@ const Sidebar = ({ isOpen }) => {
       ],
     },
     {
-      id: "library",
       icon: <FaBook />,
       label: "Library",
       submenus: [
@@ -70,7 +58,6 @@ const Sidebar = ({ isOpen }) => {
       ],
     },
     {
-      id: "canteen",
       icon: <PiForkKnifeFill />,
       label: "Canteen",
       submenus: [
@@ -79,7 +66,6 @@ const Sidebar = ({ isOpen }) => {
       ],
     },
     {
-      id: "repository",
       icon: <FaHdd />,
       label: "Repository",
       submenus: [
@@ -88,7 +74,6 @@ const Sidebar = ({ isOpen }) => {
       ],
     },
     {
-      id: "antiRagging",
       icon: <FaShieldAlt />,
       label: "Anti Ragging",
       submenus: [
@@ -99,34 +84,29 @@ const Sidebar = ({ isOpen }) => {
   ];
 
   return (
-    <div className={`sidebar ${isOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
-      {menuItems.map((item) => (
-        <div key={item.id}>
-          {/* Main menu row */}
-          <div
-            className="sidebar-item"
-            onClick={() => toggleMenu(item.id)}
-          >
+    <div className={`sidebar ${isOpen ? "sidebar-open" : "sidebar-closed"}`}>
+      
+      {/* ✅ TOP LOGO */}
+      
+
+      {/* ✅ ALWAYS VISIBLE MENUS */}
+      {menuItems.map((item, index) => (
+        <div key={index}>
+          <div className="sidebar-item">
             <div className="sidebar-left">
               <span className="sidebar-icon">{item.icon}</span>
               <span className="sidebar-text">{item.label}</span>
             </div>
-            <div className="sidebar-arrow">
-              {openMenu === item.id ? <FaChevronDown /> : <FaChevronRight />}
-            </div>
           </div>
 
-          {/* Submenus */}
-          {openMenu === item.id && (
-            <div className="submenu">
-              {item.submenus.map((sub, i) => (
-                <div key={i} className="submenu-item">
-                  <span className="submenu-icon">{sub.icon}</span>
-                  <span>{sub.label}</span>
-                </div>
-              ))}
-            </div>
-          )}
+          <div className="submenu always-open">
+            {item.submenus.map((sub, i) => (
+              <div key={i} className="submenu-item">
+                <span className="submenu-icon">{sub.icon}</span>
+                <span>{sub.label}</span>
+              </div>
+            ))}
+          </div>
         </div>
       ))}
     </div>

@@ -46,7 +46,7 @@ const Navbar = ({ onToggleSidebar }) => {
         <div className="profile-container" ref={profileRef}>
           <div className="profile" onClick={toggleProfileDropdown}>
             <img src={profile} alt="User" className="profile-pic" />
-            <span className="profile-name">ABHIJEET DUTTA (Student)</span>
+            <span className="profile-name">ANIMESH KINDO (Student)</span>
             <FaChevronDown className={`dropdown-arrow ${profileDropdownOpen ? 'rotated' : ''}`} />
           </div>
           
@@ -58,7 +58,7 @@ const Navbar = ({ onToggleSidebar }) => {
               alt="Profile"
               className="profile-img"
             />
-            <h3 className="profile-name">ABHIJEET DUTTA</h3>
+            <h3 className="profile-name">ANIMESH KINDO</h3>
             <p className="profile-role">Student</p>
           </div>
 

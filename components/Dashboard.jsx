@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import { FaArrowCircleRight } from "react-icons/fa";
-import "./Dashboard.css";
+import "./dashboard.css";
 
 const Card = ({ title, color, children }) => {
   return (
@@ -43,8 +44,8 @@ const AcademicsCard = () => (
   <Card title="Academics" color="card-blue">
     <div className="card-content">
       <div className="card-top-bar">
-        <div>Regd no. -23BCSE93</div>
-        <div>Program - B.TECH , Semester - 5</div>
+        <div>Regd no. - 25BCSH22</div>
+        <div>Program - B.TECH , Semester - 1</div>
         <div>Branch - CSE</div>
       </div>
       <div className="card-bottom-bar card-footer-blue">
@@ -75,21 +76,21 @@ const TimeTableCard = () => (
 );
 
 const AttendanceCard = () => (
-  <Card title="Attendance" color="card-purple">
-    <div className="card-content">
-      <div className="card-top-bar">
-      <div>Subjects - 0</div>
-      <div> 0 to 79% - 4</div>
-      <div> 80% to 100% - 6</div>
+    <Card title="Attendance" color="card-purple">
+      <div className="card-content">
+        <div className="card-top-bar">
+        <div>Subjects - 0</div>
+        <div> 0 to 79% - <span style={{color: 'red'}}>4</span></div>
+        <div> 80% to 100% - <span style={{color: 'lightgreen'}}>6</span></div>
+        </div>
+        <div className="card-bottom-bar card-footer-purple">
+          <a>
+            More Info <FaArrowCircleRight />
+          </a>
+        </div>
       </div>
-      <div className="card-bottom-bar card-footer-purple">
-        <a>
-          More Info <FaArrowCircleRight />
-        </a>
-      </div>
-    </div>
-  </Card>
-);
+    </Card>
+  );
 
 const ExamScheduleCard = () => (
   <Card title="Exam Schedule" color="card-darkblue">
@@ -111,23 +112,29 @@ const ExamScheduleCard = () => (
   </Card>
 );
 
-const ResultCard = () => (
-  <Card title="Result" color="card-red">
-    <div className="card-content">
-      <div className="card-top-bar">
-      <br />
-      <br />
-      <br />
-    </div>
-      <div className="card-bottom-bar card-footer-red">
-        <a>
-          More Info
-          <FaArrowCircleRight />
-        </a>
+const ResultCard = () => {
+  const openResultWindow = () => {
+    window.open('/result', 'resultWindow', 'width=800,height=600,scrollbars=yes');
+  };
+
+  return (
+    <Card title="Result" color="card-red">
+      <div className="card-content">
+        <div className="card-top-bar">
+          <br />
+          <br />
+          <br />
+        </div>
+        <div className="card-bottom-bar card-footer-red">
+          <a href="/result" onClick={(e) => { e.preventDefault(); openResultWindow(); }}>
+            More Info
+            <FaArrowCircleRight />
+          </a>
+        </div>
       </div>
-    </div>
-  </Card>
-);
+    </Card>
+  );
+};
 
 const LibraryCard = () => (
   <Card title="Library" color="card-orange">
@@ -170,7 +177,7 @@ const DuesCard = () => (
   <Card title="Dues" color="card-green">
     <div className="card-content">
       <div className="card-top-bar">
-      <div>Total Dues - 0</div>
+      <div>Total Dues - 1560</div>
       <br />
       <br />
       </div>
@@ -247,9 +254,9 @@ const ProfileCard = () => (
   <Card title="Profile" color="card-green">
     <div className="card-content">
       <div className="card-top-bar">
-        <div>Name - Abhijeet Dutta</div>
-        <div>Mobile No. - 9777337032</div>
-        <div>Email Id - abhijeetduttaam@gmail.com</div>
+        <div>Name - Animesh Kindo</div>
+        <div>Mobile No. - 7326952262</div>
+        <div>Email Id - animesh2025@gmail.com</div>
       </div>
       <div className="card-bottom-bar card-footer-green">
         <a>
@@ -346,7 +353,7 @@ const OfficialMailCard = () => (
   <Card title="Official Mail" color="card-darkblue">
     <div className="card-content">
       <div className="card-top-bar">
-        <div>Email Id:-cse.23bcse93@silicon.ac.in</div>
+        <div>Email Id:-cse.25bcsh22@silicon.ac.in</div>
         <div>Password:- idontknow</div>
         <br/>
       </div>
