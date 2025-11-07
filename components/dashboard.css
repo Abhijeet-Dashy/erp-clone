@@ -390,25 +390,19 @@ a:hover {
 
 /* -------------------- RESPONSIVE BREAKPOINTS -------------------- */
 
-/* Medium Screens - Tablets */
 @media (max-width: 1024px) {
   .dashboard-content {
     margin-left: 160px;
     padding: 20px;
   }
   .card-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-}
-
-/* Navbar Responsive Styles */
-@media (max-width: 1024px) {
   .dashboard-container .navbar-left h3 {
     font-size: 18px;
     max-width: 300px;
   }
-  
   .dashboard-container .navbar-left {
     width: 60rem;
   }
@@ -420,7 +414,7 @@ a:hover {
     padding: 15px;
   }
   .card-grid {
-    grid-template-columns: 1fr; /* Single column */
+    grid-template-columns: 1fr;
     gap: 16px;
   }
   .card {
@@ -430,41 +424,40 @@ a:hover {
   .page-title {
     font-size: 18px;
   }
-  
-  /* Navbar mobile adjustments */
   .dashboard-container .navbar-left h3 {
     font-size: 16px;
     max-width: 200px;
   }
-  
   .dashboard-container .navbar-left {
     width: 50rem;
     gap: 3px;
   }
-  
   .dashboard-container .navbar .logo {
     width: 150px;
   }
-  
   .dashboard-container .navbar .profile-name {
     font-size: 12px;
   }
-  
   .dashboard-container .navbar .grievance {
     font-size: 14px;
     padding: 5px 8px;
   }
-  
   .dashboard-container .navbar .profile-pic {
     width: 30px;
     height: 30px;
   }
-  
-  /* Profile dropdown tablet adjustments */
   .dashboard-container .navbar .profile-dropdown {
     width: 14rem;
     right: 0;
   }
+  .card-body {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-body > div:first-child {
+    flex-grow: 1;
+  }
 }
 
 @media (max-width: 480px) {
@@ -477,82 +470,38 @@ a:hover {
   .card-body {
     font-size: 14px;
     padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .page-title {
     font-size: 16px;
   }
-  
-  /* Navbar small mobile adjustments */
   .dashboard-container .navbar-left h3 {
     font-size: 14px;
     max-width: 150px;
   }
-  
   .dashboard-container .navbar-left {
     width: 40rem;
   }
-  
   .dashboard-container .navbar .logo {
     width: 120px;
   }
-  
   .dashboard-container .navbar .profile-name {
     font-size: 11px;
   }
-  
   .dashboard-container .navbar .grievance {
     font-size: 12px;
     padding: 4px 6px;
   }
-  
   .dashboard-container .navbar .profile-pic {
     width: 28px;
     height: 28px;
   }
-  
-  /* Profile dropdown mobile adjustments */
   .dashboard-container .navbar .profile-dropdown {
     width: 12rem;
     right: 0;
   }
-  
   .profile-dropdown {
     width: 200px;
-  }
-}
-
-/* Small Screens - Mobiles */
-@media (max-width: 768px) {
-  .dashboard-content {
-    margin-left: 0;
-    padding: 15px;
-  }
-  .card-grid {
-    grid-template-columns: 1fr; /* Single column */
-    gap: 16px;
-  }
-  .card {
-    min-height: auto;
-    padding-bottom: 50px;
-  }
-  .page-title {
-    font-size: 18px;
-  }
-}
-
-/* Extra Small - Small phones */
-@media (max-width: 480px) {
-  .dashboard-content {
-    padding: 10px;
-  }
-  .card-title {
-    font-size: 16px;
-  }
-  .card-body {
-    font-size: 14px;
-    padding: 12px;
-  }
-  .page-title {
-    font-size: 16px;
   }
 }

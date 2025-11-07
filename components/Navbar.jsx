@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import logo from "../src/assets/SITBBS_logo.jpg";
-import profile from "../src/assets/profile.jpg";
+import profile from "../src/assets/animesh.jpg";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaBell, FaGraduationCap, FaChevronDown, FaUser, FaCog, FaSignOutAlt } from "react-icons/fa";
 

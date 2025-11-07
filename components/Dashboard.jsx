@@ -20,7 +20,7 @@ const FacultyCard = () => (
     <div className="card-content">
       <div className="card-top-bar">
         <div>NAME: Dr Samaleswari Prasad Nayak</div>
-        <div>Contact: 9658663103</div>
+        <div>Contact: 9861122471</div>
         <br />
       </div>
       <div className="card-bottom-bar card-footer-red">
@@ -159,7 +159,7 @@ const HostelCard = () => (
   <Card title="Hostel" color="card-pink">
     <div className="card-content">
       <div className="card-top-bar">
-      <div>Registered , Since - 07-Sep-2023</div>
+      <div>Registered , Since - 07-Aug-2025</div>
       <div>Hostel - Boys Residence-I</div> 
       <div>Room No.- 414 , Bed No.- 1</div>
       </div>
@@ -354,7 +354,7 @@ const OfficialMailCard = () => (
     <div className="card-content">
       <div className="card-top-bar">
         <div>Email Id:-cse.25bcsh22@silicon.ac.in</div>
-        <div>Password:- idontknow</div>
+        <div>Password:- 6csrcs78</div>
         <br/>
       </div>
       <div className="card-bottom-bar card-footer-darkblue">
