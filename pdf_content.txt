@@ -1,0 +1,166 @@
+# indicates  Cleared  in Supplementary  Examination.  
+Disclaimer : The results shown above are provisional and subject to change after post -publication scrutiny. The final grade sheet printed on colored  
+high security paper with an official serial number will be issued after scrutiny.    
+ 
+ 
+ 
+PROVISIONAL  GRADE  SHEET  
+Name  : 
+ 
+ 
+Course/Branch  : ANEESH GOPAL SAHOO  Regd  No. : 
+ 
+BACHELOR  OF TECHNOLOGY  IN COMPUTER  SCIENCE  SIC No : 
+ 
+AND  TECHNOLOGY  23BCTG82  
+Semester  :  1   
+Subject  Code  Subject  Registred   Credit  Grade  
+BTBS -T-BS-005  ENGINEERING  MATHEMATICS -I  3 S 
+BTBS -T-BS-006  ENGINEERING  PHYSICS   3 D 
+BTBS -T-MC-008 ENVIRONMENTAL  SCIENCE  AND  ENGINEERING   0 B 
+BTCS -T-ES-001  COMPUTER  PROGRAMMING  #  3 D 
+BTEE -T-ES-001  BASIC  ELECTRICAL  ENGINEERING   2 S 
+IPT INDUCTION  PROGRAM   0 A 
+BTBS -P-BS-007  ENGINEERING  PHYSICS  LAB   1 A 
+BTBS -P-ES-009  MANUFACTURING  PRACTICES   1 E 
+BTCS -P-ES-002  COMPUTER  PROGRAMMING  LAB   2 A 
+BTEE -P-ES-002 BASIC  ELECTRICAL  ENGINEERING  LAB   1 A 
+     
+ 
+ 
+ 
+SGPA  = 4.44  
+Semester  :  2   
+Subject  Code  Subject  Registred   Credit  Grade  
+BTBS -T-BS-002  ENGINEERING  CHEMISTRY   3 D 
+BTBS -T-BS-013  ENGINEERING  MATHEMATICS -II  3 S 
+BTBS -T-HS-099 COMMUNICATIVE  & TECHNICAL  ENGLISH   2 A 
+BTBS -T-MC-001 CONSTITUTION  OF INDIA   0 C 
+BTCS -T-ES-003  DATA  STRUCTURES  AND  ALGORITHMS   3 F 
+BTEC -T-ES-001 BASIC  ELECTRONICS  ENGINEERING   2 S 
+BTBS -P-HS-011 COMMUNICATIVE  & TECHNICAL  ENGLISH  LAB   1 E 
+BTCS -P-ES-004  DATA  STRUCTURES  & ALGORITHMS  LAB   2 A 
+BTBS -P-BS-003  ENGINEERING  CHEMISTRY  LAB   1 E 
+BTBS -P-ES-004  ENGINEERING  GRAPHICS   1 E 
+BTEC -P-ES-002  BASIC  ELECTRONICS  ENGINEERING  LAB   1 B 
+     
+ 
+ 
+SGPA  = 4.26  
+CGPA  = 4.34  
+ 
+ 
+Generated  on :07/10/2026  03:44:19  Controller  of Examinations  
+
+---
+# indicates  Cleared  in Supplementary  Examination.  
+Disclaimer : The results shown above are provisional and subject to change after post -publication scrutiny. The final grade sheet printed on colored  
+high security paper with an official serial number will be issued after scrutiny.    
+ 
+ 
+ 
+PROVISIONAL  GRADE  SHEET  
+Name  : 
+ 
+ 
+Course/Branch  : ANEESH GOPAL SAHOO  Regd  No. : 
+ 
+BACHELOR  OF TECHNOLOGY  IN COMPUTER  SCIENCE  SIC No : 
+ 
+AND  TECHNOLOGY  23BCTG82  
+Semester  :  3   
+Subject  Code  Subject  Registred   Credit  Grade  
+BTBS -T-BS-014  BIOLOGY  FOR  ENGINEERS   3 C 
+BTBS -T-BS-017  MATHEMATICS -III FOR  COMPUTER  SCIENCES   4 C 
+BTBS -T-ES-013 BASICS  OF MECHANICAL  ENGINEERING   4 D 
+BTCS -T-ES-005  OOP  USING  JAVA   3 S 
+BTCS -T-PC-007  COMPUTER  ORGANIZATION  & ARCHITECTURE   3 F 
+BTEC -T-ES-003 DIGITAL  ELECTRONICS   3 S 
+BTBS -P-HS-012 CORPORATE  COMMUNICATION  LAB   1 E 
+BTCS -P-ES-006  OOP  USING  JAVA  LAB   1 A 
+BTCS -P-PC-008  COMPUTER  ORGANIZATION  & ARCHITECTURE  LAB   1 E 
+BTEC -P-ES-004  DIGITAL  ELECTRONICS  LAB   1 E 
+BTII -P-PJ-001 SUMMER  INTERNSHIP -I  1 E 
+     
+ 
+ 
+SGPA  = 4.24  
+Semester  :  4   
+Subject  Code  Subject  Registred   Credit  Grade  
+BTBS -T-BS-018  MATHEMATICS -IV FOR  COMPUTER  SCIENCES   4 F 
+BTBS -T-HS-018 ENGINEERING  ECONOMICS   3 S 
+BTCS -T-PC-009  DATABASE  MANAGEMENT  SYSTEMS   4 D 
+BTCS -T-PC-011  DESIGN  & ANALYSIS  OF ALGORITHMS   4 F 
+BTCS -T-PC-016  OPERATING  SYSTEMS   3 F 
+BTCS -T-PE-999 ARTIFICIAL  INTELLIGENCE  #  3 C 
+BTCS -P-PC-010  DATABASE  MANAGEMENT  SYSTEMS  LAB   2 C 
+BTCS -P-PC-013  DESIGN  & ANALYSIS  OF ALGORITHMS  LAB   1 B 
+BTCS -P-PC-017  OPERATING  SYSTEMS  LAB   1 B 
+     
+ 
+ 
+ 
+ 
+SGPA  = 2.56  
+CGPA  = 3.79  
+ 
+ 
+Generated  on :07/10/2026  03:44:19  Controller  of Examinations  
+
+---
+# indicates  Cleared  in Supplementary  Examination.  
+Disclaimer : The results shown above are provisional and subject to change after post -publication scrutiny. The final grade sheet printed on colored  
+high security paper with an official serial number will be issued after scrutiny.    
+ 
+ 
+ 
+PROVISIONAL  GRADE  SHEET  
+Name  : 
+ 
+ 
+Course/Branch  : ANEESH GOPAL SAHOO  Regd  No. : 
+ 
+BACHELOR  OF TECHNOLOGY  IN COMPUTER  SCIENCE  SIC No : 
+ 
+AND  TECHNOLOGY  23BCTG82  
+Semester  :  5   
+Subject  Code  Subject  Registred   Credit  Grade  
+BTBS -T-MC-020 UNIVERSAL  HUMAN  VALUES  & PROFESSIONAL  ETHICS   0 B 
+BTCS -T-PC-013  COMPUTER  NETWORKS   3 S 
+BTCS -T-PC-015  FORMAL  LANGUAGES  & AUTOMATA  THEORY   3 F 
+BTCS -T-PC-022  MACHINE  LEARNING   4 F 
+BTCS -T-PE-045 DATA  MINING  AND  DATA  WAREHOUSING   3 C 
+BTCS -T-PE-047 MOBILE  COMPUTING   3 S 
+BTBS -P-HS-021 SOFT  SKILLS  & INTER -PERSONAL  SKILLS  LAB   2 A 
+BTCS -P-PC-014  COMPUTER  NETWORKS  LAB   1 C 
+BTCS -P-PC-021  INTERNET  & WEB  TECHNOLOGY  LAB   2 A 
+BTCS -P-PJ-025 SKILL  LAB  AND  PROJECT -I  2 A 
+BTII -P-PJ-002 SUMMER  INTERNSHIP  - II  1 O 
+     
+ 
+ 
+SGPA  = 3.42  
+Semester  :  6   
+Subject  Code  Subject  Registred   Credit  Grade  
+BTCS -T-PC-026  SOFTWARE  ENGINEERING   3 C 
+BTCS -T-PC-059  CRYPTOGRAPHY  & NETWORK  SECURITY   3 F 
+BTCS -T-PC-999  MICROCONTROLLERS  & EMBEDDED  SYSTEMS   3 D 
+BTCS -T-PE-028 COMPUTER  GRAPHICS   3 D 
+BTCS -T-PE-031 SOFT  COMPUTING   3 S 
+BTCS -T-PE-052 NATURAL  LANGUAGE  PROCESSING   3 F 
+BTCS -P-PC-027  SOFTWARE  ENGINEERING  LAB   1 F 
+BTCS -P-PC-028  CRYPTOGRAPHY  & NETWORK  SECURITY  LAB   1 C 
+BTCS -P-PE-023 EMERGING  TECHNOLOGIES  LAB   2 C 
+     
+ 
+ 
+ 
+ 
+SGPA  = 3.00  
+CGPA  = 3.59  
+ 
+ 
+Generated  on :07/10/2026  03:44:19  Controller  of Examinations  
+ 
+
+---

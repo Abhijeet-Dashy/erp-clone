@@ -1,13 +1,30 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import logo from "../src/assets/SITBBS_logo.jpg";
-import profile from "../src/assets/animesh.jpg";
+import animeshPic from "../src/assets/animesh.jpg";
+import aneeshPic from "../src/assets/Aneesh_gopal_sahoo.jpg";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaBell, FaGraduationCap, FaChevronDown, FaUser, FaCog, FaSignOutAlt } from "react-icons/fa";
 
 const Navbar = ({ onToggleSidebar }) => {
   const [profileDropdownOpen, setProfileDropdownOpen] = useState(false);
   const profileRef = useRef(null);
+  const [user, setUser] = useState({ name: 'ANIMESH KINDO', sic: '25BCSH22' });
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem('user');
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+  }, []);
+
+  const getProfilePic = () => {
+    if (user.name === 'Aneesh Gopal Sahoo') return aneeshPic;
+    return animeshPic; // Default picture
+  };
+
+  const profile = getProfilePic();
+  const userName = user.name ? user.name.toUpperCase() : 'ANIMESH KINDO';
 
   const toggleProfileDropdown = () => {
     setProfileDropdownOpen(!profileDropdownOpen);
@@ -46,7 +63,7 @@ const Navbar = ({ onToggleSidebar }) => {
         <div className="profile-container" ref={profileRef}>
           <div className="profile" onClick={toggleProfileDropdown}>
             <img src={profile} alt="User" className="profile-pic" />
-            <span className="profile-name">ANIMESH KINDO (Student)</span>
+            <span className="profile-name">{userName} (Student)</span>
             <FaChevronDown className={`dropdown-arrow ${profileDropdownOpen ? 'rotated' : ''}`} />
           </div>
           
@@ -58,8 +75,7 @@ const Navbar = ({ onToggleSidebar }) => {
               alt="Profile"
               className="profile-img"
             />
-            <h3 className="profile-name">ANIMESH KINDO</h3>
-            <p className="profile-role">ANIMESH KINDO</p>
+            <p className="profile-role">{userName}</p>
             <p className="profile-role">Student</p>
           </div>
 

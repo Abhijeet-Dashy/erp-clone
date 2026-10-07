@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import { FaArrowCircleRight } from "react-icons/fa";
@@ -75,30 +75,41 @@ const TimeTableCard = () => (
   </Card>
 );
 
-const AttendanceCard = () => (
-    <Card title="Attendance" color="card-purple">
-      <div className="card-content">
-        <div className="card-top-bar">
+const AttendanceCard = () => {
+  const navigate = useNavigate();
+  const openAttendanceWindow = () => {
+    navigate("/attendance");
+  };
+  return (
+  <Card title="Attendance" color="card-purple">
+    <div className="card-content">
+      <div className="card-top-bar">
         <div>Subjects - 0</div>
-        <div> 0 to 79% - <span style={{color: 'red'}}>4</span></div>
-        <div> 80% to 100% - <span style={{color: 'lightgreen'}}>6</span></div>
+        <div>
+          {" "}
+          0 to 79% - <span style={{ color: "red" }}>3</span>
         </div>
-        <div className="card-bottom-bar card-footer-purple">
-          <a>
-            More Info <FaArrowCircleRight />
-          </a>
+        <div>
+          {" "}
+          80% to 100% - <span style={{ color: "lightgreen" }}>0</span>
         </div>
       </div>
-    </Card>
-  );
+      <div className="card-bottom-bar card-footer-purple" onClick={openAttendanceWindow} style={{ cursor: "pointer" }}>
+        <a>
+          More Info <FaArrowCircleRight />
+        </a>
+      </div>
+    </div>
+  </Card>
+)};
 
 const ExamScheduleCard = () => (
   <Card title="Exam Schedule" color="card-darkblue">
     <div className="card-content">
       <div className="card-top-bar">
-      <div>Today - 0</div>
-      <div> Tomorrow - 0</div>
-      <br />
+        <div>Today - 0</div>
+        <div> Tomorrow - 0</div>
+        <br />
       </div>
       <div className="card-bottom-bar card-footer-darkblue">
         <a>
@@ -114,7 +125,11 @@ const ExamScheduleCard = () => (
 
 const ResultCard = () => {
   const openResultWindow = () => {
-    window.open('/result', 'resultWindow', 'width=800,height=600,scrollbars=yes');
+    window.open(
+      "/result",
+      "resultWindow",
+      "width=800,height=600,scrollbars=yes",
+    );
   };
 
   return (
@@ -126,7 +141,13 @@ const ResultCard = () => {
           <br />
         </div>
         <div className="card-bottom-bar card-footer-red">
-          <a href="/result" onClick={(e) => { e.preventDefault(); openResultWindow(); }}>
+          <a
+            href="/result"
+            onClick={(e) => {
+              e.preventDefault();
+              openResultWindow();
+            }}
+          >
             More Info
             <FaArrowCircleRight />
           </a>
@@ -140,9 +161,9 @@ const LibraryCard = () => (
   <Card title="Library" color="card-orange">
     <div className="card-content">
       <div className="card-top-bar">
-      <div>Books with me - 0</div>
-      <div>To be returned today - 0</div>
-      <div>To be returned this week - 0</div>
+        <div>Books with me - 0</div>
+        <div>To be returned today - 0</div>
+        <div>To be returned this week - 0</div>
       </div>
 
       <div className="card-bottom-bar card-footer-orange">
@@ -159,9 +180,9 @@ const HostelCard = () => (
   <Card title="Hostel" color="card-pink">
     <div className="card-content">
       <div className="card-top-bar">
-      <div>Registered , Since - 07-Aug-2025</div>
-      <div>Hostel - Boys Residence-I</div> 
-      <div>Room No.- 414 , Bed No.- 1</div>
+        <div>Registered , Since - 07-Aug-2025</div>
+        <div>Hostel - Boys Residence-I</div>
+        <div>Room No.- 414 , Bed No.- 1</div>
       </div>
 
       <div className="card-bottom-bar card-footer-pink">
@@ -177,9 +198,9 @@ const DuesCard = () => (
   <Card title="Dues" color="card-green">
     <div className="card-content">
       <div className="card-top-bar">
-      <div>Total Dues - 1560</div>
-      <br />
-      <br />
+        <div>Total Dues - 1560</div>
+        <br />
+        <br />
       </div>
 
       <div className="card-bottom-bar card-footer-green">
@@ -200,9 +221,9 @@ const CanteenCard = () => (
   <Card title="Canteen" color="card-red">
     <div className="card-content">
       <div className="card-top-bar">
-      <br />
-      <br />
-      <br />
+        <br />
+        <br />
+        <br />
       </div>
 
       <div className="card-bottom-bar card-footer-red">
@@ -219,9 +240,9 @@ const OnlineQuizCard = () => (
   <Card title="Online Quiz Exam" color="card-blue">
     <div className="card-content">
       <div className="card-top-bar">
-      <br />
-      <br />
-      <br />
+        <br />
+        <br />
+        <br />
       </div>
       <div className="card-bottom-bar card-footer-blue">
         <a>
@@ -237,9 +258,9 @@ const OnlineWrittenCard = () => (
   <Card title="Online Written Exam" color="card-blue">
     <div className="card-content">
       <div className="card-top-bar">
-      <br />
-      <br />
-      <br />
+        <br />
+        <br />
+        <br />
       </div>
       <div className="card-bottom-bar card-footer-blue">
         <a>
@@ -250,29 +271,41 @@ const OnlineWrittenCard = () => (
     </div>
   </Card>
 );
-const ProfileCard = () => (
-  <Card title="Profile" color="card-green">
-    <div className="card-content">
-      <div className="card-top-bar">
-        <div>Name - Animesh Kindo</div>
-        <div>Mobile No. - 7326952262</div>
-        <div>Email Id - animesh2025@gmail.com</div>
+const ProfileCard = () => {
+  const [user, setUser] = useState({ name: '', sic: '' });
+
+  React.useEffect(() => {
+    const storedUser = localStorage.getItem('user');
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+  }, []);
+
+  return (
+    <Card title="Profile" color="card-green">
+      <div className="card-content">
+        <div className="card-top-bar">
+          <div>Name - {user.name}</div>
+          <div>Mobile No. - 7326952262</div>
+          <div>SIC - {user.sic}</div>
+          <div>Email Id - {user.sic ? `${user.sic.toLowerCase()}@silicon.ac.in` : 'student@silicon.ac.in'}</div>
+        </div>
+        <div className="card-bottom-bar card-footer-green">
+          <a>
+            More Info <FaArrowCircleRight />
+          </a>
+        </div>
       </div>
-      <div className="card-bottom-bar card-footer-green">
-        <a>
-          More Info <FaArrowCircleRight />
-        </a>
-      </div>
-    </div>
-  </Card>
-);
+    </Card>
+  );
+};
 const HolidaysCard = () => (
   <Card title="Holidays" color="card-green">
     <div className="card-content">
       <div className="card-top-bar">
         <div>Leave Year - 2025-26</div>
         <div>Total Holiday - 21</div>
-        <br/>
+        <br />
       </div>
       <div className="card-bottom-bar card-footer-green">
         <a>
@@ -288,7 +321,7 @@ const CourseFeedbackCard = () => (
       <div className="card-top-bar">
         <div>Start:</div>
         <div>End:</div>
-        <br/>
+        <br />
       </div>
       <div className="card-bottom-bar card-footer-purple">
         <a>
@@ -302,15 +335,15 @@ const FeedbackCard = () => (
   <Card title="Feedback" color="card-purple">
     <div className="card-content">
       <div className="card-top-bar">
-        <br/>
-        <br/>
-        <br/>
+        <br />
+        <br />
+        <br />
       </div>
       <div className="card-bottom-bar card-footer-purple">
         <a>
           Feedback <FaArrowCircleRight />
         </a>
-         <a>
+        <a>
           FA Feedback <FaArrowCircleRight />
         </a>
       </div>
@@ -323,7 +356,7 @@ const StudentSatisfactionSurveyFeedbackCard = () => (
       <div className="card-top-bar">
         <div>Start:</div>
         <div>End:</div>
-        <br/>
+        <br />
       </div>
       <div className="card-bottom-bar card-footer-purple">
         <a>
@@ -337,9 +370,9 @@ const PracticeSchoolCard = () => (
   <Card title="Practice School" color="card-pink">
     <div className="card-content">
       <div className="card-top-bar">
-        <br/>
-        <br/>
-        <br/>
+        <br />
+        <br />
+        <br />
       </div>
       <div className="card-bottom-bar card-footer-pink">
         <a>
@@ -355,7 +388,7 @@ const OfficialMailCard = () => (
       <div className="card-top-bar">
         <div>Email Id:-cse.25bcsh22@silicon.ac.in</div>
         <div>Password:- 6csrcs78</div>
-        <br/>
+        <br />
       </div>
       <div className="card-bottom-bar card-footer-darkblue">
         <a>
@@ -365,6 +398,8 @@ const OfficialMailCard = () => (
     </div>
   </Card>
 );
+
+
 // 🔹 Main Dashboard Component
 const Dashboard = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -401,10 +436,10 @@ const Dashboard = () => {
             <ProfileCard />
             <HolidaysCard />
             <CourseFeedbackCard />
-            <FeedbackCard/>
-            <StudentSatisfactionSurveyFeedbackCard/>
-            <PracticeSchoolCard/>
-            <OfficialMailCard/>
+            <FeedbackCard />
+            <StudentSatisfactionSurveyFeedbackCard />
+            <PracticeSchoolCard />
+            <OfficialMailCard />
           </div>
         </div>
       </div>

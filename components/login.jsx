@@ -24,9 +24,19 @@ const SignInPage = () => {
     "Silicon Institute Trust",
   ];
 
+  const users = [
+    { name: 'Animesh Kindo', sic: '25BCSH22', password: '1234' },
+    { name: 'Abhipsa Panda', sic: '25MMCF67', password: '1234' },
+    { name: 'Akriti Agarwal', sic: '25BCSH71', password: '1234' },
+    { name: 'Aneesh Gopal Sahoo', sic: '23BCTG82', password: '1234' }
+  ];
+
   const handleLogin = (e) => {
     e.preventDefault();
-    if (username === '25BCSH22' && password === '123456789') {
+    const user = users.find(u => u.sic === username && u.password === password);
+    
+    if (user) {
+      localStorage.setItem('user', JSON.stringify(user));
       navigate("/dashboard");
     } else {
       alert('Invalid username or password');
