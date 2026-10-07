@@ -402,7 +402,7 @@ const OfficialMailCard = () => (
 
 // 🔹 Main Dashboard Component
 const Dashboard = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(window.innerWidth > 768);
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
