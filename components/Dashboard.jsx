@@ -44,9 +44,9 @@ const AcademicsCard = () => (
   <Card title="Academics" color="card-blue">
     <div className="card-content">
       <div className="card-top-bar">
-        <div>Regd no. - 25BCSH22</div>
-        <div>Program - B.TECH , Semester - 1</div>
-        <div>Branch - CSE</div>
+        <div>Regd no. - 23BCTG82</div>
+        <div>Program - B.TECH , Semester - 7</div>
+        <div>Branch - CST</div>
       </div>
       <div className="card-bottom-bar card-footer-blue">
         <a>
@@ -61,7 +61,7 @@ const TimeTableCard = () => (
   <Card title="Time Table" color="card-orange">
     <div className="card-content">
       <div className="card-btn">
-        <button className="btn">CSE-C</button>
+        <button className="btn">CST </button>
       </div>
       <br />
       <br />
@@ -286,7 +286,7 @@ const ProfileCard = () => {
       <div className="card-content">
         <div className="card-top-bar">
           <div>Name - {user.name}</div>
-          <div>Mobile No. - 7326952262</div>
+          <div>Mobile No. - 8280083003</div>
           <div>SIC - {user.sic}</div>
           <div>Email Id - {user.sic ? `${user.sic.toLowerCase()}@silicon.ac.in` : 'student@silicon.ac.in'}</div>
         </div>
@@ -303,7 +303,7 @@ const HolidaysCard = () => (
   <Card title="Holidays" color="card-green">
     <div className="card-content">
       <div className="card-top-bar">
-        <div>Leave Year - 2025-26</div>
+        <div>Leave Year - 2026-27</div>
         <div>Total Holiday - 21</div>
         <br />
       </div>
@@ -386,7 +386,7 @@ const OfficialMailCard = () => (
   <Card title="Official Mail" color="card-darkblue">
     <div className="card-content">
       <div className="card-top-bar">
-        <div>Email Id:-cse.25bcsh22@silicon.ac.in</div>
+        <div>Email Id:-cst.23bctg82@silicon.ac.in</div>
         <div>Password:- 6csrcs78</div>
         <br />
       </div>
