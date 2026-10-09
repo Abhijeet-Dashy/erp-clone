@@ -28,7 +28,7 @@ const SignInPage = () => {
     { name: 'Animesh Kindo', sic: '25BCSH22', password: '1234' },
     { name: 'Abhipsa Panda', sic: '25MMCF67', password: '1234' },
     { name: 'Akriti Agarwal', sic: '25BCSH71', password: '1234' },
-    { name: 'Aneesh Gopal Sahoo', sic: '23BCTG82', password: '1234' }
+    { name: 'Anish Aniket', sic: '23BCTG82', password: '1234' }
   ];
 
   const handleLogin = (e) => {

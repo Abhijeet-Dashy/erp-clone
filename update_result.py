@@ -145,8 +145,8 @@ for div in semester_divs:
 
 html_out = str(soup)
 
-html_out = html_out.replace('ABHIJEET  DASH', 'ANEESH GOPAL SAHOO')
-html_out = html_out.replace('ABHIJEET DASH', 'ANEESH GOPAL SAHOO')
+html_out = html_out.replace('ABHIJEET  DASH', 'ANISH ANIKET')
+html_out = html_out.replace('ABHIJEET DASH', 'ANISH ANIKET')
 html_out = html_out.replace('23BCSD95', '23BCTG82')
 
 html_out = html_out.replace('\\\\', '\\\\\\\\').replace('`', '\\\\`').replace('$', '\\\\$')

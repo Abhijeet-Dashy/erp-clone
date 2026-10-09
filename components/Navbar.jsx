@@ -19,7 +19,7 @@ const Navbar = ({ onToggleSidebar }) => {
   }, []);
 
   const getProfilePic = () => {
-    if (user.name === 'Aneesh Gopal Sahoo') return aneeshPic;
+    if (user.name === 'Anish Aniket') return aneeshPic;
     return animeshPic; // Default picture
   };
 

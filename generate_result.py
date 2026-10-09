@@ -5,8 +5,8 @@ with open('result_html.txt', 'r', encoding='utf-8') as f:
     html = f.read()
 
 # Replace names
-html = html.replace('ABHIJEET  DASH', 'ANEESH GOPAL SAHOO')
-html = html.replace('ABHIJEET DASH', 'ANEESH GOPAL SAHOO')
+html = html.replace('ABHIJEET  DASH', 'ANISH ANIKET')
+html = html.replace('ABHIJEET DASH', 'ANISH ANIKET')
 html = html.replace('23BCSD95', '23BCTG82')
 
 # Escape backticks and dollar signs for JS template literal
